@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!DOCTYPE html>
-<html>
-<head>
   <title>WatchX</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0b0b10;
-      color: white;
+      background: #f4f4f4;
+      color: #222;
     }
 
     
     .topbar {
-      background: linear-gradient(90deg, #1a001f, #3b0066, #ff0033);
-      padding: 18px;
-      font-size: 22px;
+      background: #111;
+      color: white;
+      padding: 14px 20px;
+      font-size: 20px;
       font-weight: bold;
-      letter-spacing: 2px;
-      text-shadow: 0 0 10px #ff0033;
+    }
+
+    
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
     }
 
     
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 18px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
     }
 
     
     .card {
-      background: #141420;
-      border: 1px solid #2a0033;
-      border-radius: 12px;
+      background: white;
+      border-radius: 8px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
-      transition: transform 0.2s, box-shadow 0.2s;
+      border: 1px solid #ddd;
+      transition: 0.2s;
     }
 
     .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(187, 0, 255, 0.5);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
 
     .card img {
@@ -55,17 +56,18 @@
     .title {
       padding: 10px;
       font-size: 14px;
-      color: #ffb3ff;
     }
 
     a {
       text-decoration: none;
       color: inherit;
     }
+
     
-    .glow {
-      color: #ff0033;
-      text-shadow: 0 0 8px #ff0033;
+    .subtitle {
+      margin: 10px 0 20px;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 
@@ -74,24 +76,34 @@
 <body>
 
 <div class="topbar">
-  ⚡ <span class="glow">WatchX</span> Created by reclude!! [Special thanks to Ray for giving me the videos]
+  WatchX
 </div>
 
-<div class="grid">
+<div class="container">
 
-  <a href="video1.html">
-    <div class="card">
-      <img src="thumb1.jpg">
-      <div class="title"> Friend Video 1 PLACEHOLDER </div>
-    </div>
-  </a>
+  <div class="subtitle">
+    videos from friends and creators! special thanks to ray
+  </div>
 
-  <a href="video2.html">
-    <div class="card">
-      <img src="thumb2.jpg">
-      <div class="title">⚡ placehlder</div>
-    </div>
-  </a>
+  <div class="grid">
+
+    
+    <a href="video1.html">
+      <div class="card">
+        <img src="thumb1.jpg">
+        <div class="title">another placeholder</div>
+      </div>
+    </a>
+
+    
+    <a href="video2.html">
+      <div class="card">
+        <img src="thumb2.jpg">
+        <div class="title">placeholder </div>
+      </div>
+    </a>
+
+  </div>
 
 </div>
 
