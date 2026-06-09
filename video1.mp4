@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watch Video</title>
+</head>
+<body>
+
+<h1>Friend's Video 1</h1>
+
+<video controls width="700">
+  <source src="video1.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<br><br>
+
+<a href="index.html">← Back to Home</a>
+
+</body>
+</html>
