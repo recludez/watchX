@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+/* Top bar */
+.topbar {
+  background: linear-gradient(90deg, #111, #2b0a3d);
+  color: white;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(106, 13, 173, 0.2);
+}
+
+/* Titles */
+.title {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Subtle cyber accent */
+.accent {
+  color: #6a0dad; /* purple */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
