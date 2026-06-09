@@ -1,26 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!DOCTYPE html>
+<html>
+<head>
   <title>WatchX</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0b10;
+      color: white;
+    }
+
+    
+    .topbar {
+      background: linear-gradient(90deg, #1a001f, #3b0066, #ff0033);
+      padding: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px #ff0033;
+    }
+
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 18px;
+      padding: 20px;
+    }
+
+    
+    .card {
+      background: #141420;
+      border: 1px solid #2a0033;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(187, 0, 255, 0.5);
+    }
+
+    .card img {
+      width: 100%;
+      display: block;
+    }
+
+    .title {
+      padding: 10px;
+      font-size: 14px;
+      color: #ffb3ff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .glow {
+      color: #ff0033;
+      text-shadow: 0 0 8px #ff0033;
+    }
+  </style>
+
 </head>
+
 <body>
 
-<h1>WatchX</h1>
-<p>Welcome to WatchX</p>
+<div class="topbar">
+  ⚡ <span class="glow">WatchX</span> // Neon Video Network
+</div>
 
-<h2>Videos</h2>
+<div class="grid">
 
-<!-- Video 1 -->
-<a href="video1.html">
-  <img src="thumb1.jpg" width="200">
-</a>
-<p>Friend's Video 1</p>
+  <a href="video1.html">
+    <div class="card">
+      <img src="thumb1.jpg">
+      <div class="title"> Friend Video 1 PLACEHOLDER </div>
+    </div>
+  </a>
 
-<!-- Video 2 -->
-<a href="video2.html">
-  <img src="thumb2.jpg" width="200">
-</a>
-<p>Friend's Video 2</p>
+  <a href="video2.html">
+    <div class="card">
+      <img src="thumb2.jpg">
+      <div class="title">⚡ placehlder</div>
+    </div>
+  </a>
+
+</div>
 
 </body>
 </html>
